@@ -1,0 +1,45 @@
+# Local settings contain WordPress credentials, API keys and personal prompts.
+/config.json
+/config.json.*
+/config.local.json
+/config.*.local.json
+/.env
+/.env.*
+!/.env.example
+
+# Generated publication results and XML-RPC exports.
+/results.txt
+/results*.txt
+/results*.csv
+/xmlrpc_ok*.txt
+*.log
+
+# Credential files, local backups and archives.
+*.pem
+*.key
+*.p12
+*.pfx
+*.bak
+*.old
+*.zip
+*.7z
+*.rar
+
+# Python cache, environments and build output.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+build/
+dist/
+*.egg-info/
+
+# Editor and operating system files.
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
