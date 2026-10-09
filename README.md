@@ -100,8 +100,6 @@ https://second.example.invalid:YOUR_USERNAME:YOUR_WORDPRESS_PASSWORD
 | `config.example.json` | Шаблон настроек с примерами промтов без личных данных |
 | `results.txt` | Ссылки на опубликованные посты |
 
-## Подготовка к публикации на GitHub
-
 Ключ OpenRouter, логины и пароли WordPress вводятся пользователем во вкладке
 «Настройки». Для первого запуска файл `config.json` не нужен: пока его нет,
 приложение читает `config.example.json`. При сохранении настроек создаётся локальный
@@ -111,8 +109,3 @@ https://second.example.invalid:YOUR_USERNAME:YOUR_WORDPRESS_PASSWORD
 Приложение сохраняет настройки, включая ключи и пароли, в `config.json` в открытом
 виде. Этот файл, результаты публикаций `results.txt`, экспорт `xmlrpc_ok.txt`,
 логи, локальные архивы и Python-кэш исключены из Git через `.gitignore`.
-
-Перед загрузкой файлов через веб-интерфейс GitHub или отправкой архива удалите
-из загружаемой копии локальные настройки, результаты и кэш: `.gitignore` действует
-только при работе с Git. Публикуйте исходники, `requirements.txt`, `README.md`,
-`.gitignore` и `config.example.json` с примерами.
